@@ -1,11 +1,11 @@
 Lucky = 9
-Guess = int(input("what is your Lucky number? "))
+Guess = 5
 
-if Guess > Lucky+2 :
-    print("TOO HIGH")
 if Guess < Lucky-2 :
-    print("TOO LOW")
-if Guess == Lucky:
+    print("Too Low")
+elif Guess > Lucky+2 :
+    print("Too High")
+elif Guess == Lucky :
     print("Correct Answer")
-if (Guess >= Lucky-2) and (Guess <= Lucky+2):
+elif (Guess >= Lucky-2) and (Guess <= Lucky+2):
     print("Almost There")
